@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #DCC8A0;
+    background-image: url("../assets/tile.png");
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    background-color: #855535cc;
+}
+
+h2{
+    background-color: #A97C5Fcc;
+}
