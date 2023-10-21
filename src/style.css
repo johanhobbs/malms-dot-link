@@ -34,7 +34,7 @@ h2{
     font-size: 2em;
 }
 
-nav ul{
+#navigator{
     background-color: #A97C5F99;
     list-style: none;
     display: flex;
@@ -43,14 +43,14 @@ nav ul{
     font-family:  'Caveat', cursive;
 }
 
-nav ul li{
+#navigator li{
     background-color: #DCC8A055;
     border-radius: 0.7em;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
-nav ul li:hover{
+#navigator li:hover{
     cursor: pointer;
     background-color: #DCC8A0aa;
 }
@@ -59,9 +59,9 @@ button{
     background-color: #DCC8A055;
     border: solid 2px #855535cc;
     border-radius: 3px;
-    margin: 2em;
     padding: 0.3em;
     font-family: "openDyslexic", cursive;
+    margin-left: 0.3em;
 }
 
 button:hover{
@@ -69,4 +69,12 @@ button:hover{
     border: solid 2px #855535;
     color: white;
     cursor: pointer;
+}
+
+#accessibility{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "openDyslexic", cursive;
 }
