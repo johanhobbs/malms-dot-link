@@ -1,80 +1,83 @@
 @font-face {
-    font-family: openDyslexic;
-    src: url(../assets/OpenDyslexic-Regular.otf);
-  }
-
-*{
-    margin:0;
-    padding: 0;
+  font-family: openDyslexic;
+  src: url(../assets/OpenDyslexic-Regular.otf);
 }
 
-body{
-    background-color: #DCC8A0;
-    background-image: url("../assets/tile.png");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, header nav ul{
-    padding: 0.3em;
+body {
+  background-color: #dcc8a0;
+  background-image: url("../assets/tile.png");
 }
 
-h1, h2{
-    text-align: center;
-    color: white;
+h1,
+h2,
+header nav ul {
+  padding: 0.3em;
 }
 
-h1{
-    background-color: #855535cc;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 3.5em;
+h1,
+h2 {
+  text-align: center;
+  color: white;
 }
 
-h2{
-    background-color: #A97C5Fcc;
-    font-family:  'Caveat', cursive;
-    font-size: 2em;
+h1 {
+  background-color: #855535cc;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
 }
 
-#navigator{
-    background-color: #A97C5F99;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5em;
-    font-family:  'Caveat', cursive;
+h2 {
+  background-color: #a97c5fcc;
+  font-family: "Caveat", cursive;
+  font-size: 2em;
 }
 
-#navigator li{
-    background-color: #DCC8A055;
-    border-radius: 0.7em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+#navigator {
+  background-color: #a97c5f99;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-family: "Caveat", cursive;
 }
 
-#navigator li:hover{
-    cursor: pointer;
-    background-color: #DCC8A0aa;
+#navigator li {
+  background-color: #dcc8a055;
+  border-radius: 0.7em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-button{
-    background-color: #DCC8A055;
-    border: solid 2px #855535cc;
-    border-radius: 3px;
-    padding: 0.3em;
-    font-family: "openDyslexic", cursive;
-    margin-left: 0.3em;
+#navigator li:hover {
+  cursor: pointer;
+  background-color: #dcc8a0aa;
 }
 
-button:hover{
-    background-color: #85553599;
-    border: solid 2px #855535;
-    color: white;
-    cursor: pointer;
+button {
+  background-color: #dcc8a055;
+  border: solid 2px #855535cc;
+  border-radius: 3px;
+  padding: 0.3em;
+  font-family: "openDyslexic", cursive;
+  margin-left: 0.3em;
 }
 
-#accessibility{
-    padding: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "openDyslexic", cursive;
+button:hover {
+  background-color: #85553599;
+  border: solid 2px #855535;
+  color: white;
+  cursor: pointer;
+}
+
+#accessibility {
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "openDyslexic", cursive;
 }
