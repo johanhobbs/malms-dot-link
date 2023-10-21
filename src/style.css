@@ -1,5 +1,5 @@
 @font-face {
-  font-family: openDyslexic;
+  font-family: "Open Dyslexic";
   src: url(../assets/OpenDyslexic-Regular.otf);
 }
 
@@ -58,12 +58,17 @@ h2 {
   background-color: #dcc8a0aa;
 }
 
+#navigator li a {
+  font-style: normal;
+  text-decoration: none;
+}
+
 button {
   background-color: #dcc8a055;
   border: solid 2px #855535cc;
   border-radius: 3px;
   padding: 0.3em;
-  font-family: "openDyslexic", cursive;
+  font-family: "Open Dyslexic", cursive;
   margin-left: 0.3em;
 }
 
@@ -79,5 +84,5 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "openDyslexic", cursive;
+  font-family: "Open Dyslexic", cursive;
 }

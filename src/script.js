@@ -1,6 +1,6 @@
 const header = document.getElementsByClassName("header");
 const navigator = document.getElementById("navigator");
-
+const btnOpenDyslexic = document.getElementById("btn-open-dyslexic");
 class linkContents {
   constructor(linkText, linkPath) {
     this.linkText = linkText;
@@ -24,3 +24,11 @@ navLinks.forEach((navLink) => {
     `<li><a href="${navLink.linkPath}">${navLink.linkText}</a></li>`
   );
 });
+
+function enableOpenDyslexicMode() {
+  document.body.style.fontFamily = "Open Dyslexic, Cursive";
+}
+
+function disableOpenDyslexicMode() {
+  document.h1.style.fontFamily = "Kaushan Script, cursive";
+}
