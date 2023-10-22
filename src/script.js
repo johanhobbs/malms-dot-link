@@ -3,6 +3,8 @@ const navigator = document.getElementById("navigator");
 const btnOpenDyslexic = document.getElementById("btn-open-dyslexic");
 const accessibility = document.getElementById("accessibility");
 const textWrapper = document.getElementsByClassName("text-wrapper");
+const btnDarkMode = document.getElementById("btn-dark-mode");
+const btnLightMode = document.getElementById("btn-light-mode");
 class linkContents {
   constructor(linkText, linkPath) {
     this.linkText = linkText;
@@ -77,4 +79,21 @@ function toggleOpenDyslexic() {
     console.log(`enabling Open Dyslexic`);
     enableOpenDyslexicMode();
   }
+}
+btnLightMode.addEventListener("click", toggleLightMode);
+
+function toggleLightMode() {
+  console.log(`Light mode button pressed`);
+}
+
+btnDarkMode.addEventListener("click", toggleDarkMode);
+
+function toggleDarkMode() {
+  console.log(`Dark mode button pressed`);
+  document.querySelector("body").style.backgroundImage =
+    "url('../assets/tile-dark.png')";
+  document.querySelector("h2").style.backgroundColor = "#85553555";
+  document.querySelector("h1").style.backgroundColor = "#a97c5f55";
+  document.querySelector("body").style.color = "#ffffff";
+  document.querySelector("a").style.color = "#ffffff";
 }

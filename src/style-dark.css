@@ -6,11 +6,12 @@
 * {
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
 body {
   background-color: #dcc8a0;
-  background-image: url("../assets/tile.png");
+  background-image: url("../assets/tile-dark.png");
 }
 
 h1,
@@ -62,7 +63,7 @@ h2 {
 #navigator li a {
   font-style: normal;
   text-decoration: none;
-  color: #000000;
+  color: #fffff;
 }
 
 main {
@@ -99,8 +100,4 @@ button:hover {
   align-items: center;
   justify-content: center;
   font-family: "Open Dyslexic", cursive;
-}
-
-.dark-mode {
-  background-color: #00000085;
 }
