@@ -44,6 +44,7 @@ h2 {
   justify-content: space-around;
   font-size: 1.5em;
   font-family: "Caveat", cursive;
+  flex-wrap: wrap;
 }
 
 #navigator li {
@@ -61,6 +62,19 @@ h2 {
 #navigator li a {
   font-style: normal;
   text-decoration: none;
+  color: #000000;
+}
+
+main {
+  font-family: "Caveat", cursive;
+  font-size: 1em;
+}
+p {
+  padding: 0.3em;
+}
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 3em;
 }
 
 button {
