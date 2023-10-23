@@ -96,4 +96,5 @@ function toggleDarkMode() {
   document.querySelector("h1").style.backgroundColor = "#a97c5f55";
   document.querySelector("body").style.color = "#ffffff";
   document.querySelector("a").style.color = "#ffffff";
+  document.getElementById("accessibility").style.color = "#ffffff";
 }

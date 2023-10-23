@@ -65,9 +65,13 @@ h2 {
   color: #000000;
 }
 
+#navigator img {
+  max-height: 1.5em;
+}
+
 main {
   font-family: "Caveat", cursive;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 p {
   padding: 0.3em;
