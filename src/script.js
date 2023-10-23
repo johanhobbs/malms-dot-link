@@ -80,21 +80,83 @@ function toggleOpenDyslexic() {
     enableOpenDyslexicMode();
   }
 }
+
+lightDarkNormalMode = "normal";
+
 btnLightMode.addEventListener("click", toggleLightMode);
 
 function toggleLightMode() {
   console.log(`Light mode button pressed`);
+  if (lightDarkNormalMode === "normal") {
+    enableLightMode();
+  } else if (lightDarkNormalMode === "dark") {
+    enableLightMode();
+  } else if (lightDarkNormalMode === "light") {
+    enableNormalMode();
+  }
 }
 
 btnDarkMode.addEventListener("click", toggleDarkMode);
 
 function toggleDarkMode() {
   console.log(`Dark mode button pressed`);
+  if (lightDarkNormalMode === "normal") {
+    enableDarkMode();
+  } else if (lightDarkNormalMode === "dark") {
+    enableNormalMode();
+  } else if (lightDarkNormalMode === "light") {
+    enableDarkMode();
+  }
+}
+
+function enableDarkMode() {
+  //SECTION - For logging purposes
+  console.log("Enabling Dark Mode");
+  lightDarkNormalMode = "dark";
+
+  //SECTION - updates our style to reflect the desired mode
   document.querySelector("body").style.backgroundImage =
     "url('../assets/tile-dark.png')";
   document.querySelector("h2").style.backgroundColor = "#85553555";
   document.querySelector("h1").style.backgroundColor = "#a97c5f55";
+  document.querySelector("h2").style.color = "#ffffff";
+  document.querySelector("h1").style.color = "#ffffff";
   document.querySelector("body").style.color = "#ffffff";
   document.querySelector("a").style.color = "#ffffff";
+  // TODO fix this so it restyles ALL anchor links
   document.getElementById("accessibility").style.color = "#ffffff";
+}
+
+function enableNormalMode() {
+  // SECTION - for logging purposes
+  console.log("Enabling Normal Mode");
+  lightDarkNormalMode = "normal";
+
+  //SECTION - updates the style properties of the page
+  document.querySelector("body").style.backgroundImage =
+    "url('../assets/tile.png')";
+  document.querySelector("h2").style.backgroundColor = "#a97c5fcc";
+  document.querySelector("h1").style.backgroundColor = "#855535cc";
+  document.querySelector("h2").style.color = "#ffffff";
+  document.querySelector("h1").style.color = "#ffffff";
+  document.querySelector("body").style.color = "#000000";
+  document.querySelector("a").style.color = "#000000";
+  document.getElementById("accessibility").style.color = "#000000";
+}
+
+function enableLightMode() {
+  //SECTION - for logging purposes
+  console.log("Enabling Light Mode");
+  lightDarkNormalMode = "light";
+
+  //SECTION - updates style to reflect the desired mode
+  document.querySelector("body").style.backgroundImage =
+    "url('../assets/tile.png')";
+  document.querySelector("h2").style.backgroundColor = "#a97c5f66";
+  document.querySelector("h1").style.backgroundColor = "#ffffff33";
+  document.querySelector("h2").style.color = "#000000";
+  document.querySelector("h1").style.color = "#000000";
+  document.querySelector("body").style.color = "#000000";
+  document.querySelector("a").style.color = "#000000";
+  document.getElementById("accessibility").style.color = "#000000";
 }
